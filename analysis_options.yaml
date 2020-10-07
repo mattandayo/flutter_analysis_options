@@ -1,0 +1,50 @@
+include: package:pedantic/analysis_options.yaml
+
+analyzer:
+  strong-mode:
+    implicit-casts: false
+    implicit-dynamic: false
+  errors:
+    hash_and_equals: error
+  exclude:
+    - lib/l10n/*.dart
+
+linter:
+  rules:
+    - camel_case_types
+    - library_names
+    - file_names
+    - non_constant_identifier_names
+    - directives_ordering
+    - package_api_docs
+    - comment_references
+    - prefer_adjacent_string_concatenation
+    - prefer_interpolation_to_compose_strings
+    - unnecessary_brace_in_string_interps
+    - prefer_collection_literals
+    - avoid_function_literals_in_foreach_calls
+    - prefer_function_declarations_over_variables
+    - unnecessary_lambdas
+    - unnecessary_getters_setters
+    - unnecessary_this
+    - prefer_initializing_formals
+    - avoid_catches_without_on_clauses
+    - use_to_and_as_if_applicable
+    - one_member_abstracts
+    - avoid_classes_with_only_static_members
+    - prefer_final_fields
+    - use_setters_to_change_properties
+    - avoid_setters_without_getters
+    - avoid_returning_null
+    - avoid_returning_this
+    - prefer_typing_uninitialized_variables
+    - omit_local_variable_types
+    - prefer_generic_function_type_aliases
+    - avoid_private_typedef_functions
+    - avoid_positional_boolean_parameters
+    - hash_and_equals
+    - avoid_null_checks_in_equality_operators
+    - prefer_const_constructors
+    - prefer_const_literals_to_create_immutables
+    - cancel_subscriptions
+    - close_sinks
